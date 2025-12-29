@@ -1,0 +1,11 @@
+{
+  "name": "neon",
+  "displayName": "Neon Plugins",
+  "description": "Neon serverless PostgreSQL integration plugins",
+  "plugins": [
+    {
+      "name": "neon-plugin",
+      "path": "."
+    }
+  ]
+}
