@@ -1,0 +1,21 @@
+{
+  "name": "neon-plugin",
+  "version": "1.0.0",
+  "description": "Complete Neon serverless PostgreSQL integration - Drizzle ORM, serverless driver, ephemeral databases, Neon Auth, unified SDK, MCP server, and vector/RAG with hybrid search",
+  "author": {
+    "name": "Neon Plugin Developer"
+  },
+  "keywords": [
+    "neon",
+    "postgres",
+    "serverless",
+    "drizzle",
+    "auth",
+    "vector",
+    "pgvector",
+    "rag",
+    "mcp",
+    "database"
+  ],
+  "license": "MIT"
+}
