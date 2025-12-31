@@ -1,0 +1,21 @@
+{
+  "name": "convex-plugin",
+  "version": "1.0.0",
+  "description": "Complete Convex backend development - functions (queries, mutations, actions), database (schema, indexes), Convex Auth (OAuth, Magic Links, Passwords), file storage, scheduling (cron jobs), and real-time reactive backends",
+  "author": {
+    "name": "Convex Plugin Developer"
+  },
+  "keywords": [
+    "convex",
+    "backend",
+    "serverless",
+    "database",
+    "realtime",
+    "auth",
+    "typescript",
+    "react",
+    "functions",
+    "scheduling"
+  ],
+  "license": "MIT"
+}

@@ -1,18 +1,25 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "neon",
-  "description": "Neon serverless PostgreSQL integration plugins for Claude Code",
+  "name": "Innocraft Plugin Marketplace",
+  "description": "Backend development plugins for Claude Code - Neon PostgreSQL, Convex, and more",
   "owner": {
     "name": "Innocraft Systems",
     "email": "support@innocraft.systems"
   },
   "plugins": [
     {
-      "name": "neon-plugin",
-      "description": "Complete Neon serverless PostgreSQL integration with Drizzle ORM, Auth, Vector/RAG, and MCP support",
-      "source": "./",
+      "name": "neon",
+      "description": "Complete Neon serverless PostgreSQL integration - Drizzle ORM, serverless driver, ephemeral databases, Neon Auth, unified SDK, MCP server, and vector/RAG with hybrid search",
+      "source": "plugins/neon",
       "category": "database",
-      "homepage": "https://github.com/innocraft-systems/neon-plugin"
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "convex",
+      "description": "Complete Convex backend development - functions (queries, mutations, actions), database (schema, indexes), Convex Auth, file storage, scheduling, and real-time reactive backends",
+      "source": "plugins/convex",
+      "category": "backend",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
     }
   ]
 }
