@@ -27,6 +27,13 @@
       "source": "./plugins/kenya-payments",
       "category": "payments",
       "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "kra-etims",
+      "description": "KRA eTIMS (Electronic Tax Invoice Management System) integration for Kenya tax compliance. OSCU/VSCU integration, invoice submission, stock management, item classification.",
+      "source": "./plugins/kra-etims",
+      "category": "compliance",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
     }
   ]
 }

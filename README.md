@@ -9,6 +9,7 @@ A curated collection of backend development plugins for Claude Code.
 | [**neon**](plugins/neon/) | Neon serverless PostgreSQL - Drizzle ORM, serverless driver, auth, MCP, vectors |
 | [**convex**](plugins/convex/) | Convex reactive backend - functions, database, auth, file storage, scheduling |
 | [**kenya-payments**](plugins/kenya-payments/) | Kenya payments - Kopokopo, Daraja (M-Pesa), Pesapal, Intasend |
+| [**kra-etims**](plugins/kra-etims/) | KRA eTIMS tax compliance - invoicing, stock, OSCU/VSCU |
 
 ## Installation
 
@@ -30,6 +31,9 @@ claude plugin install convex
 
 # Install Kenya Payments plugin
 claude plugin install kenya-payments
+
+# Install KRA eTIMS plugin
+claude plugin install kra-etims
 ```
 
 ### Local Development
@@ -112,6 +116,30 @@ Complete Kenya payment gateway integrations.
 - Multi-currency support
 
 [Full documentation](plugins/kenya-payments/README.md)
+
+---
+
+### KRA eTIMS Plugin
+
+Kenya Revenue Authority Electronic Tax Invoice Management System integration.
+
+**Skills:** `etims-integration`, `etims-invoicing`, `etims-stock`
+
+**Capabilities:**
+- Device initialization (OSCU/VSCU)
+- Sales invoice submission
+- Credit/debit notes
+- Stock management and item registration
+- UNSPSC item classification
+- Purchase tracking
+- Tax calculations (VAT 16%, zero-rated, exempt)
+
+**Compliance Requirements:**
+- All Kenyan businesses must use eTIMS
+- Every sale must receive a CU Invoice Number
+- Stock movements must be tracked
+
+[Full documentation](plugins/kra-etims/README.md)
 
 ---
 
