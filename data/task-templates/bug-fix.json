@@ -1,0 +1,27 @@
+{
+  "_description": "Task template for bug fix evaluations",
+  "template": {
+    "id": "bugfix-{BUG_ID}",
+    "prompt": "Fix bug #{BUG_ID}: {BUG_DESCRIPTION}\n\nRequirements:\n1. Identify the root cause of the bug\n2. Implement a fix that addresses the root cause\n3. Add a regression test that would have caught this bug\n4. Ensure all existing tests still pass\n5. Document the fix in a commit message\n\nAcceptance Criteria:\n- [ ] Bug is fixed and cannot be reproduced\n- [ ] Regression test added and passing\n- [ ] All existing tests pass\n- [ ] No new warnings or errors introduced",
+    "graders": [
+      {
+        "type": "deterministic_tests",
+        "name": "all-tests-pass",
+        "command": "npm test"
+      },
+      {
+        "type": "state_check",
+        "name": "test-added",
+        "expect": {
+          "files": ["tests/{BUG_ID}.test.ts"]
+        }
+      }
+    ],
+    "max_iterations": 20,
+    "completion_promise": "BUG FIXED AND TESTS PASSING"
+  },
+  "variables": {
+    "BUG_ID": "Unique identifier for the bug (e.g., AUTH-123)",
+    "BUG_DESCRIPTION": "Clear description of the bug behavior"
+  }
+}

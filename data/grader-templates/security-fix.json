@@ -1,0 +1,52 @@
+{
+  "_description": "Grader template for security vulnerability fixes",
+  "graders": [
+    {
+      "type": "deterministic_tests",
+      "name": "security-tests",
+      "description": "Run security-specific test suite",
+      "command": "npm test -- --grep 'security\\|auth\\|validation'",
+      "required": true
+    },
+    {
+      "type": "deterministic_tests",
+      "name": "regression-tests",
+      "description": "Ensure fix doesn't break existing functionality",
+      "command": "npm test",
+      "required": true
+    },
+    {
+      "type": "static_analysis",
+      "name": "security-scan",
+      "description": "Run security static analysis",
+      "commands": [
+        "npm audit --audit-level=high",
+        "npx eslint --config .eslintrc.security.js src/"
+      ],
+      "required": true
+    },
+    {
+      "type": "state_check",
+      "name": "vulnerability-patched",
+      "description": "Verify vulnerable patterns are removed",
+      "expect": {
+        "not_contains": {
+          "_comment": "Define patterns that should NOT exist after fix",
+          "patterns": ["unsafeFunction", "dangerousPattern"]
+        }
+      },
+      "required": true
+    },
+    {
+      "type": "llm_rubric",
+      "name": "security-review",
+      "description": "LLM review of security fix quality",
+      "rubric": "Review the security fix for: completeness of the fix, no new vulnerabilities introduced, proper input validation, secure coding practices",
+      "required": false
+    }
+  ],
+  "config": {
+    "pass_threshold": 1.0,
+    "required_must_pass": true
+  }
+}

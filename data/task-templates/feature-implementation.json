@@ -1,0 +1,46 @@
+{
+  "_description": "Task template for feature implementation evaluations",
+  "template": {
+    "id": "feature-{FEATURE_ID}",
+    "prompt": "Implement feature: {FEATURE_NAME}\n\n## Description\n{FEATURE_DESCRIPTION}\n\n## Requirements\n{REQUIREMENTS}\n\n## Implementation Guidelines\n1. Follow TDD: Write failing tests first, then implementation\n2. Follow project coding standards\n3. Add appropriate error handling\n4. Update documentation if needed\n\n## Acceptance Criteria\n{ACCEPTANCE_CRITERIA}\n\n## Definition of Done\n- [ ] All acceptance criteria met\n- [ ] Tests written and passing\n- [ ] Code reviewed for quality\n- [ ] No regressions in existing tests",
+    "graders": [
+      {
+        "type": "deterministic_tests",
+        "name": "feature-tests",
+        "command": "npm test -- --grep '{FEATURE_ID}'"
+      },
+      {
+        "type": "deterministic_tests",
+        "name": "all-tests",
+        "command": "npm test"
+      },
+      {
+        "type": "static_analysis",
+        "name": "code-quality",
+        "commands": ["npm run lint", "npm run typecheck"]
+      },
+      {
+        "type": "state_check",
+        "name": "files-created",
+        "expect": {
+          "files": ["{IMPLEMENTATION_FILES}"]
+        }
+      },
+      {
+        "type": "llm_rubric",
+        "name": "feature-review",
+        "rubric": "Evaluate the implementation for: completeness of requirements, code quality, test coverage, error handling"
+      }
+    ],
+    "max_iterations": 50,
+    "completion_promise": "FEATURE COMPLETE"
+  },
+  "variables": {
+    "FEATURE_ID": "Unique identifier (e.g., FEAT-001)",
+    "FEATURE_NAME": "Short name for the feature",
+    "FEATURE_DESCRIPTION": "Detailed description of what the feature does",
+    "REQUIREMENTS": "Numbered list of specific requirements",
+    "ACCEPTANCE_CRITERIA": "Numbered list of testable acceptance criteria",
+    "IMPLEMENTATION_FILES": "Expected files to be created/modified"
+  }
+}

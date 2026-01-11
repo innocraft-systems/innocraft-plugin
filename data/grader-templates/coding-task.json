@@ -1,0 +1,46 @@
+{
+  "_description": "Grader template for coding tasks (bug fixes, features, refactoring)",
+  "graders": [
+    {
+      "type": "deterministic_tests",
+      "name": "unit-tests",
+      "description": "Run project test suite",
+      "command": "npm test",
+      "required": true
+    },
+    {
+      "type": "static_analysis",
+      "name": "lint-and-types",
+      "description": "Check code quality and type safety",
+      "commands": [
+        "npm run lint",
+        "npm run typecheck"
+      ],
+      "required": true
+    },
+    {
+      "type": "state_check",
+      "name": "file-changes",
+      "description": "Verify expected files were modified",
+      "expect": {
+        "files": [],
+        "contains": {}
+      },
+      "required": false
+    },
+    {
+      "type": "tool_calls",
+      "name": "workflow-verification",
+      "description": "Verify proper workflow (read before edit)",
+      "required": [
+        {"tool": "Read", "description": "Must read files before modifying"},
+        {"tool": "Edit", "description": "Must use Edit for changes"}
+      ],
+      "required": false
+    }
+  ],
+  "config": {
+    "pass_threshold": 0.8,
+    "required_must_pass": true
+  }
+}
