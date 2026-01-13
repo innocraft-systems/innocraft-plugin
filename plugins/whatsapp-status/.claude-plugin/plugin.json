@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-status",
+  "version": "1.0.0",
+  "description": "WhatsApp Status content generator using Nano Banana AI - image templates, video generation, and scheduling reminders for Kenya businesses",
+  "author": {
+    "name": "Innocraft Systems",
+    "email": "support@innocraft.systems"
+  },
+  "homepage": "https://github.com/innocraft-systems/innocraft-plugin/tree/main/plugins/whatsapp-status",
+  "repository": "https://github.com/innocraft-systems/innocraft-plugin",
+  "keywords": [
+    "whatsapp",
+    "status",
+    "content",
+    "nano-banana",
+    "ai",
+    "kenya"
+  ],
+  "license": "MIT"
+}

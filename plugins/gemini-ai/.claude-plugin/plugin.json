@@ -1,0 +1,20 @@
+{
+  "name": "gemini-ai",
+  "version": "1.0.0",
+  "description": "Complete Google Gemini API integration - all models from 1.5 to 3.0, multimodal, Live API, image/video generation (Nano Banana, Veo), with guidance on direct API vs OpenRouter",
+  "author": {
+    "name": "Innocraft Systems",
+    "email": "support@innocraft.systems"
+  },
+  "homepage": "https://github.com/innocraft-systems/innocraft-plugin/tree/main/plugins/gemini-ai",
+  "repository": "https://github.com/innocraft-systems/innocraft-plugin",
+  "keywords": [
+    "gemini",
+    "google",
+    "ai",
+    "multimodal",
+    "live-api",
+    "image-generation"
+  ],
+  "license": "MIT"
+}

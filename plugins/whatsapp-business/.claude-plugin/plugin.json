@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-business",
+  "version": "1.0.0",
+  "description": "WhatsApp Business Cloud API integration - messaging, templates, webhooks, and interactive messages",
+  "author": {
+    "name": "Innocraft Systems",
+    "email": "support@innocraft.systems"
+  },
+  "homepage": "https://github.com/innocraft-systems/innocraft-plugin/tree/main/plugins/whatsapp-business",
+  "repository": "https://github.com/innocraft-systems/innocraft-plugin",
+  "keywords": [
+    "whatsapp",
+    "messaging",
+    "cloud-api",
+    "templates",
+    "webhooks",
+    "interactive"
+  ],
+  "license": "MIT"
+}

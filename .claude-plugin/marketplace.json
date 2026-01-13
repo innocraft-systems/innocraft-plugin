@@ -1,37 +1,81 @@
 {
-  "name": "innocraft-plugins",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "innocraft-marketplace",
+  "description": "Backend development plugins for Claude Code - Neon PostgreSQL, Convex, and more",
   "owner": {
     "name": "Innocraft Systems",
-    "email": "plugins@innocraft.systems"
-  },
-  "metadata": {
-    "description": "Innocraft Systems plugin marketplace for Claude Code. Includes BMAD-Evals for automated sprint execution and agent evaluation.",
-    "version": "1.0.0",
-    "pluginRoot": "./plugins"
+    "email": "support@innocraft.systems"
   },
   "plugins": [
     {
+      "name": "neon",
+      "description": "Complete Neon serverless PostgreSQL integration - Drizzle ORM, serverless driver, ephemeral databases, Neon Auth, unified SDK, MCP server, and vector/RAG with hybrid search",
+      "source": "./plugins/neon",
+      "category": "database",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "convex",
+      "description": "Complete Convex backend development - functions (queries, mutations, actions), database (schema, indexes), Convex Auth, file storage, scheduling, and real-time reactive backends",
+      "source": "./plugins/convex",
+      "category": "backend",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "kenya-payments",
+      "description": "Complete Kenya payments integration - Kopokopo (K2 Connect), Safaricom Daraja (M-Pesa), Pesapal API 3.0, and Intasend. STK Push, B2C, C2B, webhooks, bank payouts.",
+      "source": "./plugins/kenya-payments",
+      "category": "payments",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "kra-etims",
+      "description": "KRA eTIMS (Electronic Tax Invoice Management System) integration for Kenya tax compliance. OSCU/VSCU integration, invoice submission, stock management, item classification.",
+      "source": "./plugins/kra-etims",
+      "category": "compliance",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "whatsapp-business",
+      "description": "WhatsApp Business Cloud API integration - messaging, templates, webhooks, interactive messages. Send notifications, handle customer inquiries, and automate conversations.",
+      "source": "./plugins/whatsapp-business",
+      "category": "messaging",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "meta-business",
+      "description": "Meta Business Suite integration - Facebook Pages and Instagram Business posting, scheduling, analytics. Post photos, videos, carousels, reels, and track engagement.",
+      "source": "./plugins/meta-business",
+      "category": "social",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "whatsapp-status",
+      "description": "WhatsApp Status content generator using Nano Banana AI - image templates, video generation, scheduling reminders. Create professional Status content for Kenya businesses.",
+      "source": "./plugins/whatsapp-status",
+      "category": "content",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "gemini-ai",
+      "description": "Complete Google Gemini API integration - all models (1.5 to 3.0), multimodal (vision, audio), image generation (Nano Banana), video generation (Veo), Live API for real-time voice chat. Direct API and OpenRouter support.",
+      "source": "./plugins/gemini-ai",
+      "category": "ai",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
       "name": "bmad-evals",
+      "description": "BMAD methodology with cross-context persistence harness. Run stories across context windows with /brun, cancel with /bstop. Includes eval framework for testing AI agent performance.",
       "source": "./plugins/bmad-evals",
-      "description": "BMAD-Evals: Automated sprint execution with cross-context persistence. Run 100+ stories unattended with /sprint-run. Includes dependency-aware story chaining, RAG integration, TDD enforcement, and comprehensive dev permissions.",
-      "version": "2.0.0",
-      "author": {
-        "name": "Innocraft Systems"
-      },
-      "homepage": "https://github.com/innocraft-systems/innocraft-plugin",
-      "repository": "https://github.com/innocraft-systems/innocraft-plugin",
-      "license": "MIT",
       "category": "development",
-      "tags": [
-        "evals",
-        "bmad",
-        "sprint-runner",
-        "automated-development",
-        "agent-evaluation",
-        "graders",
-        "tdd",
-        "rag-integration"
-      ]
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
+    },
+    {
+      "name": "design-system",
+      "description": "Premium design system enforcement with Firecrawl inspiration capture. Extract design tokens from sites, align components to design system, generate CSS/Tailwind configs. Anti-AI-slop patterns.",
+      "source": "./plugins/design-system",
+      "category": "design",
+      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
     }
   ]
 }

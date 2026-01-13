@@ -1,0 +1,20 @@
+{
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Premium design system enforcement with Firecrawl inspiration capture. Enhances BMAD UX agent with per-project design tokens, component alignment, and prototype extraction.",
+  "author": {
+    "name": "Innocraft Systems",
+    "email": "support@innocraft.systems"
+  },
+  "homepage": "https://github.com/innocraft-systems/innocraft-plugin/tree/main/plugins/design-system",
+  "repository": "https://github.com/innocraft-systems/innocraft-plugin",
+  "keywords": [
+    "design-system",
+    "tokens",
+    "firecrawl",
+    "ui",
+    "ux",
+    "premium-design"
+  ],
+  "license": "MIT"
+}

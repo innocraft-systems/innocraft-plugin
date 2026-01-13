@@ -1,0 +1,20 @@
+{
+  "name": "meta-business",
+  "version": "1.0.0",
+  "description": "Meta Business Suite integration - Facebook Pages and Instagram Business posting, scheduling, and analytics",
+  "author": {
+    "name": "Innocraft Systems",
+    "email": "support@innocraft.systems"
+  },
+  "homepage": "https://github.com/innocraft-systems/innocraft-plugin/tree/main/plugins/meta-business",
+  "repository": "https://github.com/innocraft-systems/innocraft-plugin",
+  "keywords": [
+    "meta",
+    "facebook",
+    "instagram",
+    "social-media",
+    "posting",
+    "analytics"
+  ],
+  "license": "MIT"
+}
