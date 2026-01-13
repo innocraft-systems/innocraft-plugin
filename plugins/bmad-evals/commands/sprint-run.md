@@ -20,7 +20,12 @@ allowed-tools: [
   "Bash(diff:*)", "Bash(patch:*)",
   "Bash(tar:*)", "Bash(zip:*)", "Bash(unzip:*)",
   "Bash(env:*)", "Bash(export:*)", "Bash(source:*)",
-  "Bash(sleep:*)", "Bash(date:*)", "Bash(time:*)"
+  "Bash(sleep:*)", "Bash(date:*)", "Bash(time:*)",
+  "Bash(if:*)", "Bash(dir:*)", "Bash(copy:*)", "Bash(del:*)", "Bash(ren:*)", "Bash(move:*)",
+  "Bash(cmd:*)", "Bash(powershell:*)", "Bash(cmd.exe:*)",
+  "Bash(type:*)", "Bash(where:*)", "Bash(set:*)", "Bash(call:*)",
+  "Bash(robocopy:*)", "Bash(xcopy:*)", "Bash(mklink:*)",
+  "Bash(rd:*)", "Bash(md:*)", "Bash(rmdir:*)"
 ]
 ---
 
