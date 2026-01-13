@@ -5,7 +5,7 @@ allowed-tools: [
   "Read", "Write", "Edit", "Glob", "Grep", "Task",
   "Bash(${CLAUDE_PLUGIN_ROOT}/scripts/setup-sprint-runner.sh:*)",
   "Bash(${CLAUDE_PLUGIN_ROOT}/scripts/parse-dependencies.sh:*)",
-  "Bash(mkdir:*)", "Bash(rm:*)", "Bash(cp:*)", "Bash(mv:*)", "Bash(touch:*)",
+  "Bash(mkdir:*)", "Bash(mkdir -p:*)", "Bash(mkdir -p -v:*)", "Bash(rm:*)", "Bash(rm -rf:*)", "Bash(rm -r:*)", "Bash(rm -f:*)", "Bash(cp:*)", "Bash(mv:*)", "Bash(touch:*)",
   "Bash(cat:*)", "Bash(ls:*)", "Bash(pwd:*)", "Bash(find:*)", "Bash(grep:*)",
   "Bash(npm:*)", "Bash(npx:*)", "Bash(node:*)", "Bash(pnpm:*)", "Bash(yarn:*)", "Bash(bun:*)",
   "Bash(git:*)",
