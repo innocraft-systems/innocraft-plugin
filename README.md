@@ -293,13 +293,14 @@ Premium design system enforcement with Firecrawl inspiration capture.
 **Skills:** `premium-design`
 
 **Commands:**
+- `/ds-setup` - Guided design system setup (analyzes project, walks through full workflow)
 - `/ds-init` - Initialize design system for project
 - `/ds-capture <url>` - Capture design tokens from inspiration site via Firecrawl
 - `/ds-extract` - Extract design system from prototype UI code
 - `/ds-align <file>` - Align component to project's design system
 - `/ds-tokens` - View or regenerate design tokens (CSS, Tailwind)
 
-**Agents:** `design-reviewer`
+**Agents:** `design-orchestrator`, `design-reviewer`
 
 **Features:**
 - Anti-AI-slop patterns (distinctive typography, bold colors)
