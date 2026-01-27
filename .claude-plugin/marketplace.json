@@ -76,13 +76,6 @@
       "source": "./plugins/design-system",
       "category": "design",
       "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
-    },
-    {
-      "name": "bmad-method",
-      "description": "BMAD Method (Breakthrough Method of Agile AI-Driven Development) - Project initialization, session recovery agent, and methodology guidance for structured AI-assisted development.",
-      "source": "./plugins/bmad-method",
-      "category": "development",
-      "homepage": "https://github.com/innocraft-systems/innocraft-plugin"
     }
   ]
 }
